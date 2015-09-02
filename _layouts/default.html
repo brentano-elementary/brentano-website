@@ -81,13 +81,13 @@
       <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css" />
 
       <script src="js/modernizr-2.6.2.min.js"></script>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
 
     </head>
     <body>
     <div class="navbar navbar-default navbar-static-top" role="navigation">
-      <div class="container-fluid">
+      <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -99,17 +99,41 @@
             Brentano Elementary
           </a>
         </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href='/about.html'>About Brentano</a></li>
+                <li><a href='/arts.html'>Arts</a></li>
+                <li><a href='/life-at-brentano.html'>Life at Brentano</a></li>
+              </ul>
+            </li>
+            <li><a href='/academics.html'>Academics</a></li>
+            <li><a href='/staff/index.html'>Staff</a></li>
+            <li><a href='/calendar.html'>Calendar</a></li>
+            <li><a href='/enrollment.html'>Enrollment</a></li>
+            <li><a href='/contact.html'>Contact us</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container">
       <div class='col-md-12'>
 
         {{content}}
 
         <div class="footer">
           <hr />
-          <p class='muted pull-right'>Website by <a href='http://datamade.us'>DataMade</a></p>
+          <p class='muted pull-right'>
+            Brentano Math &amp; Science Academy<br />
+            Pre-K thru 8th Grade<br />
+            2723 N. Fairfield Ave., Chicago, Illinois 60647<br />
+            Phone: 773.534.4100<br />
+            Fax: 773.534.4508<br />
+            Website by <a href='http://datamade.us'>DataMade</a>
+          </p>
         </div>
       </div>
     </div> <!-- /container -->
