@@ -2,6 +2,14 @@ body {
     font-size: 16px;
 }
 
+a {
+  color: #036;
+}
+
+a:active, a:hover, a:focus {
+  color: #036;
+}
+
 .footer {
     margin-top: 100px;
 }
