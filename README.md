@@ -6,8 +6,8 @@ This is the code for the Brentano Math and Science Academy, a child-centered nei
 you can fork the repository before cloning if you'd like to contribute
 
 ``` bash
-git clone git@github.com:YOURGITHUBUSERNAME/brentano.git
-cd brentano
+git clone git@github.com:YOURGITHUBUSERNAME/brentano-website.git
+cd brentano-website
 
 # to run locally
 jekyll serve -w
@@ -18,6 +18,7 @@ navigate to http://localhost:5000/
 ## Dependencies
 We used the following open source tools:
 
+* [Jekyll](http://jekyllrb.com/) - a simple, blog-aware, static site generator for personal, project, or organization sites
 * [Bootstrap](http://getbootstrap.com/) - Responsive HTML, CSS and Javascript framework
 * [GitHub pages](https://pages.github.com/) - free static website hosting
 
