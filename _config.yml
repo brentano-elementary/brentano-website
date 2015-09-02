@@ -1,0 +1,9 @@
+port:  5000
+markdown: kramdown
+name: "Brentano Elementary"
+url: "localhost:5000"
+encoding: utf-8
+timezone: America/Chicago
+description: ""
+gems:
+  - jekyll-redirect-from
