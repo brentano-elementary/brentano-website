@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<div class="row">
+    <div class="col-sm-8">
+        {{ content }}
+    </div>
+    <div class="col-sm-4">
+        {% if page.image != 'None' %}
+        <img src="{{ page.image }}" class="img-responsive" />
+        {% endif %}
+        <h4>
+            {{ page.name }} <br /><small>{{ page.title }}</small>
+        </h4>
+        <table class="table">
+            <tbody>
+                {% if page.room %}
+                <tr>
+                    <td><strong>Room</strong></td>
+                    <td>{{ page.room }}</td>
+                </tr>
+                {% endif %}
+                {% if page.university %}
+                <tr>
+                    <td><strong>University</strong></td>
+                    <td>{{ page.university }}</td>
+                </tr>
+                {% endif %}
+                {% if page.degree %}
+                <tr>
+                    <td><strong>Degree</strong></td>
+                    <td>{{ page.degree }}</td>
+                </tr>
+                {% endif %}
+                {% if page.email %}
+                <tr>
+                    <td><strong>Email</strong></td>
+                    <td>{{ page.email }}</td>
+                </tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+</div>

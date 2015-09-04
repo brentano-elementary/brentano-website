@@ -9,223 +9,64 @@ description:
         <h3>Administrative Support</h3>
         <table class="table table-condensed">
             <tbody>
+                {% for member in site.categories['staff_admin'] %}
                 <tr>
-                    <td>Dr. Lillian Gonzalez</td>
-                    <td>Interim Principal</td>
+                    <td><a href="{{ member.url }}">{{ member.name }}</a></td>
+                    <td>{{ member.title }}</td>
                 </tr>
-                <tr>
-                    <td>Dr. Trudy Taylor</td>
-                    <td>Interim Principal</td>
-                </tr>
-                <tr>
-                    <td>Ms. Katherine Nolan</td>
-                    <td>Counselor/Case Manager / 205</td>
-                </tr>
-                <tr>
-                    <td>Mr. Jeffery Einbinder</td>
-                    <td>Technology Coordinator</td>
-                </tr>
-                <tr>
-                    <td>Ms. Alexandra Arango</td>
-                    <td>School Clerk</td>
-                </tr>
+                {% endfor %}
             </tbody>
         </table>
 
         <h3>Upper / Intermediate: 3-8th</h3>
         <table class="table table-condensed">
             <tbody>
+                {% for member in site.categories['staff_upper'] %}
                 <tr>
-                    <td>Ms. Bha</td>
-                    <td>314</td>
-                    <td> 8</td>
+                    <td><a href="{{ member.url }}">{{ member.name }}</a></td>
+                    <td>{{ member.room }}</td>
+                    <td>{{ member.title }}</td>
                 </tr>
-                <tr>
-                    <td>Ms. Harris</td>
-                    <td>315</td>
-                    <td> 8</td>
-                </tr>
-                <tr>
-                    <td>Ms. Thompson</td>
-                    <td>302</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>Mr. Julius</td>
-                    <td>306</td>
-                    <td>6/7</td>
-                </tr>
-                <tr>
-                    <td>Mr. Harlan</td>
-                    <td>210</td>
-                    <td> 5</td>
-                </tr>
-                <tr>
-                    <td>Ms. Bartlett</td>
-                    <td>217</td>
-                    <td>3/4</td>
-                </tr>
-                <tr>
-                    <td>Ms. Williams</td>
-                    <td>207</td>
-                    <td> 3</td>
-                </tr>
-                <tr>
-                    <td>Ms. Parkinson</td>
-                    <td>204</td>
-                    <td> 2</td>
-                </tr>
-                <tr>
-                    <td>Ms. Vinh</td>
-                    <td>205</td>
-                    <td>3/4</td>
-                </tr>
+                {% endfor %}
             </tbody>
         </table>
 
         <h3>Kindergarten / Primary: Pre-K-2nd</h3>
         <table class="table table-condensed">
             <tbody>
+                {% for member in site.categories['staff_lower'] %}
                 <tr>
-                    <td>Mrs. Hernandez</td>
-                    <td>201</td>
-                    <td>2/3</td>
+                    <td>{{ member.name }}</td>
+                    <td>{{ member.room }}</td>
+                    <td>{{ member.title }}</td>
                 </tr>
-                <tr>
-                    <td>Ms. Sandoval</td>
-                    <td>103</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>Ms. Hendler</td>
-                    <td>104</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>Ms. Brodie</td>
-                    <td>107</td>
-                    <td>K</td>
-                </tr>
-                <tr>
-                    <td>Ms. Sanew</td>
-                    <td>105</td>
-                    <td>Pre-K</td>
-                </tr>
-                <tr>
-                    <td>Ms. Cortes</td>
-                    <td>114</td>
-                    <td>Kindergarten</td>
-                </tr>
-                <tr>
-                    <td>Ms. Auler</td>
-                    <td>113</td>
-                    <td>Pre-K/Blended Program</td>
-                </tr>
-                <tr>
-                    <td>Ms. Patel</td>
-                    <td>113</td>
-                    <td>Pre-K/Blended Program</td>
-                </tr>
+                {% endfor %}
             </tbody>
         </table>
 
         <h3>Diverse Learner Services and Supports</h3>
         <table class="table table-condensed">
             <tbody>
-            <tr>
-                <td>Ms. Stenson</td>
-                <td></td>
-                <td>202</td>
-            </tr>
-            <tr>
-                <td>Mr. Kearns</td>
-                <td>311</td>
-                <td>Special Education</td>
-            </tr>
-            <tr>
-                <td>Ms. Son</td>
-                <td>317</td>
-                <td>Special Education</td>
-            </tr>
-            <tr>
-                <td>Ms. Lopez</td>
-                <td>203</td>
-                <td>Special Education</td>
-            </tr>
-                <td>Ms. Nguyen</td>
-                <td>211</td>
-                <td>Special Education</td>
+                {% for member in site.categories['staff_diverse'] %}
+                <tr>
+                    <td>{{ member.name }}</td>
+                    <td>{{ member.room }}</td>
+                    <td>{{ member.title }}</td>
+                </tr>
+                {% endfor %}
             </tbody>
         </table>
 
         <h3>Ancillary / Itinerant / Support</h3>
         <table class="table table-condensed">
             <tbody>
+                {% for member in site.categories['staff_support'] %}
                 <tr>
-                    <td>Ms. Katz</td>
-                    <td>215</td>
-                    <td>Interventionist</td>
+                    <td>{{ member.name }}</td>
+                    <td>{{ member.room }}</td>
+                    <td>{{ member.title }}</td>
                 </tr>
-                <tr>
-                    <td>Mr. Forde</td>
-                    <td>Gym</td>
-                    <td>Physical Education</td>
-                </tr>
-                <tr>
-                    <td>Mr. Einbinder</td>
-                    <td>115</td>
-                    <td>Computer Lab</td>
-                </tr>
-                <tr>
-                    <td>Ms. Zlatanovski</td>
-                    <td>304</td>
-                    <td>Theater Drama Teacher</td>
-                </tr>
-                <tr>
-                    <td>Mr. Cotto</td>
-                    <td>Security</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Ms. Gonzalez</td>
-                    <td>113</td>
-                    <td>Preschool ESP</td>
-                </tr>
-                <tr>
-                    <td>Ms. Ortiz</td>
-                    <td>ESP</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Ms. Medina</td>
-                    <td>105</td>
-                    <td>Preschool ESP</td>
-                </tr>
-                <tr>
-                    <td>Ms. Lucena</td>
-                    <td>ESP</td>
-                    <td>ESP</td>
-                </tr>
-                <tr>
-                    <td>Ms. Arce</td>
-                    <td>ESP</td>
-                    <td>ESP</td>
-                </tr>
-                <tr>
-                    <td>Ms. Roman</td>
-                    <td>ESP</td>
-                    <td>ESP</td>
-                </tr>
-                <tr>
-                    <td>Mr. Angel Maldonado</td>
-                    <td></td>
-                    <td>Engineer</td>
-                </tr>
-                <tr>
-                    <td>Mr. Paul Kynch</td>
-                    <td>Lunchroom</td>
-                    <td>Manager</td>
-                </tr>
+                {% endfor %}
             </tbody>
         </table>
 
