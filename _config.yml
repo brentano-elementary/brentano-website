@@ -5,5 +5,6 @@ url: "localhost:5000"
 encoding: utf-8
 timezone: America/Chicago
 description: ""
+permalink: /:categories/:title
 gems:
   - jekyll-redirect-from
