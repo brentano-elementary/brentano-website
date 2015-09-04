@@ -48,5 +48,8 @@ description:
 
     </div>
     <div class='col-sm-4'>
+        {% for member in site.categories['academics'] %}
+            <p><a href="{{ member.url }}">{{ member.name }}</a></p>
+        {% endfor %}
     </div>
 </div>
