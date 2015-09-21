@@ -135,6 +135,3 @@ DEPENDENCIES
   github-pages
   jekyll (= 2.4.0)
   jekyll-redirect-from
-
-BUNDLED WITH
-   1.10.6

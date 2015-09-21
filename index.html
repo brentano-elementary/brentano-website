@@ -1,27 +1,55 @@
 ---
 layout: default
-title: Brentano Elementary
 description:
 ---
-<div class="row">
-    <div class="col-md-8">
-        <h1>Brentano Elementary</h1>
-    </div>
-    <div class="col-md-4" id="fb-feed"></div>
-    <script type="text/EJS" id="fb-feed-template">
-        <% $.each(data, function(i, post){ %>
-            <div class="fb-post">
-                <% if (typeof post.picture !== 'undefined'){ %>
-                    <img src="<%= post.picture %>" />
-                <% } %>
-                <p>
-                    <span class="label label-default"><%= moment(post.created_time).format('MMMM DD YYYY HH:mm') %></span>
-                    <% var post_id = post.id.split('_')[1] %>
-                    <a href="https://www.facebook.com/brentanologansquare/posts/<%= post_id %>"><%= post.message %></a>
-                </p>
-            </div>
-            <hr />
-        <% })%>
-    </script>
+
+<div class="bg"></div>
+<div class="jumbotron">
+    <h1>Brentano</h1>
+    <h2>Math &amp; Science Academy</h2>
 </div>
 
+<div class='row'>
+    <div class='col-sm-8'>
+        <h2><i class='fa fa-fw fa-facebook-official'></i> Latest updates from Brentano</h2>
+        <div id="fb-feed"></div>
+    </div>
+    <div class='col-sm-4'>
+        <h4>Come visit!</h4>
+
+        <h4>Enroll at Brentano</h4>
+    </div>
+</div>
+
+<script type="text/EJS" id="fb-feed-template">
+    <% $.each(data, function(i, post){ %>
+        <div class="fb-post">
+            <small>
+                <%= moment(post.created_time).format('MMM Do YYYY h:mma') %>
+            </small>
+            <p>
+                <% var post_id = post.id.split('_')[1] %>
+                <%= post.message %>
+            </p>
+            <% if (typeof post.picture !== 'undefined'){ %>
+                <img style='max-height: 500px;' class='img-responsive img-thumbnail' src="https://graph.facebook.com/<%= post.object_id %>/picture?access_token=<%= access_token %>" />
+            <% } %>
+            <p>
+            <a href="https://www.facebook.com/brentanologansquare/posts/<%= post_id %>"><i class='fa fa-fw fa-facebook-official'></i> See this post on Facebook &raquo;</a>
+            </p>
+        </div>
+        <hr />
+    <% })%>
+</script>
+
+<script>
+    var jumboHeight = $('.jumbotron').outerHeight();
+    function parallax(){
+        var scrolled = $(window).scrollTop();
+        $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+    }
+
+    $(window).scroll(function(e){
+        parallax();
+    });
+</script>

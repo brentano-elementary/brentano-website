@@ -1,6 +1,6 @@
 port:  5000
 markdown: kramdown
-name: "Brentano Elementary"
+name: "Brentano Math and Science Academy"
 url: "localhost:5000"
 encoding: utf-8
 timezone: America/Chicago
