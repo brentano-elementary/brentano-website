@@ -3,5 +3,25 @@ layout: default
 title: Brentano Elementary
 description:
 ---
-<h1>Brentano Elementary</h1>
+<div class="row">
+    <div class="col-md-8">
+        <h1>Brentano Elementary</h1>
+    </div>
+    <div class="col-md-4" id="fb-feed"></div>
+    <script type="text/EJS" id="fb-feed-template">
+        <% $.each(data, function(i, post){ %>
+            <div class="fb-post">
+                <% if (typeof post.picture !== 'undefined'){ %>
+                    <img src="<%= post.picture %>" />
+                <% } %>
+                <p>
+                    <span class="label label-default"><%= moment(post.created_time).format('MMMM DD YYYY HH:mm') %></span>
+                    <% var post_id = post.id.split('_')[1] %>
+                    <a href="https://www.facebook.com/brentanologansquare/posts/<%= post_id %>"><%= post.message %></a>
+                </p>
+            </div>
+            <hr />
+        <% })%>
+    </script>
+</div>
 
