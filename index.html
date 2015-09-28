@@ -3,12 +3,6 @@ layout: default
 description:
 ---
 
-<div class="bg"></div>
-<div class="jumbotron">
-    <h1>Brentano</h1>
-    <h2>Math &amp; Science Academy</h2>
-</div>
-
 <div class='row'>
     <div class='col-sm-8'>
         <h2><i class='fa fa-fw fa-facebook-official'></i> Latest updates from Brentano</h2>
@@ -29,27 +23,12 @@ description:
             </small>
             <p>
                 <% var post_id = post.id.split('_')[1] %>
-                <%= post.message %>
+                <%= post.message %> <a href="https://www.facebook.com/brentanologansquare/posts/<%= post_id %>"><i class='fa fa-fw fa-facebook-official'></i></a>
             </p>
             <% if (typeof post.picture !== 'undefined'){ %>
                 <img style='max-height: 500px;' class='img-responsive img-thumbnail' src="https://graph.facebook.com/<%= post.object_id %>/picture?access_token=<%= access_token %>" />
             <% } %>
-            <p>
-            <a href="https://www.facebook.com/brentanologansquare/posts/<%= post_id %>"><i class='fa fa-fw fa-facebook-official'></i> See this post on Facebook &raquo;</a>
-            </p>
         </div>
         <hr />
     <% })%>
-</script>
-
-<script>
-    var jumboHeight = $('.jumbotron').outerHeight();
-    function parallax(){
-        var scrolled = $(window).scrollTop();
-        $('.bg').css('height', (jumboHeight-scrolled) + 'px');
-    }
-
-    $(window).scroll(function(e){
-        parallax();
-    });
 </script>

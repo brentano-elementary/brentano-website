@@ -108,8 +108,10 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href='/about.html'>About Brentano</a></li>
+                <li><a href='/after-school-care.html'>After school care</a></li>
                 <li><a href='/arts.html'>Arts</a></li>
-                <li><a href='/life-at-brentano.html'>Life at Brentano</a></li>
+                <li><a href='/family-and-community.html'>Family and community</a></li>
+                <li><a href='/local-school-council.html'>Local School Council (LSC)</a></li>
               </ul>
             </li>
             <li><a href='/academics/index.html'>Academics</a></li>
@@ -121,6 +123,13 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
+
+    {% if page.url == "/index.html" %}
+      <div class="jumbotron">
+          <h1>Brentano</h1>
+          <h2>Math &amp; Science Academy</h2>
+      </div>
+    {% endif %}
 
     <div class="container">
       <div class='col-md-12'>
