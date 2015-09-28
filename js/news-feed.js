@@ -19,7 +19,7 @@ function loadFeed(){
     var params = {
         'access_token': access_token,
         'fields': 'message,story,created_time,picture,object_id,from',
-        'limit': 5
+        'limit': 3
     }
     var template_guts = $('#fb-feed-template').html()
     FB.api(url,'get', params, function(response){

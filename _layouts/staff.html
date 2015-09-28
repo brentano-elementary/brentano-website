@@ -2,13 +2,12 @@
 layout: default
 ---
 
+<p><br /><a href='/staff/index.html'>< back to Staff</a></p>
+
 <div class="row">
-    <div class="col-sm-8">
-        {{ content }}
-    </div>
     <div class="col-sm-4">
         {% if page.image != 'None' %}
-        <img src="{{ page.image }}" class="img-responsive" />
+        <img src="{{ page.image }}" class="img-responsive img-thumbnail" style='max-width: 150px;'/>
         {% endif %}
         <h4>
             {{ page.name }} <br /><small>{{ page.title }}</small>
@@ -41,5 +40,8 @@ layout: default
                 {% endif %}
             </tbody>
         </table>
+    </div>
+    <div class="col-sm-8">
+        {{ content }}
     </div>
 </div>

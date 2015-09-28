@@ -1,13 +1,14 @@
 body {
     font-size: 16px;
+    font-family: "Open Sans", sans-serif;
 }
 
 a {
-  color: #036;
+  color: #048;
 }
 
 a:active, a:hover, a:focus {
-  color: #036;
+  color: #048;
 }
 
 .footer {
@@ -22,7 +23,7 @@ a:active, a:hover, a:focus {
   height: 350px;
   color: white;
   text-align: center;
-  text-shadow: #036 0 1px 1px;
+  text-shadow: #048 0 1px 1px;
   background: 
     linear-gradient(
       rgba(0, 0, 0, 0.3), 
@@ -30,3 +31,5 @@ a:active, a:hover, a:focus {
     ),
     url('/images/banners/brentano_front_2.png') no-repeat center center;
 }
+
+.jumbotron h1 { font-size: 84px; }
