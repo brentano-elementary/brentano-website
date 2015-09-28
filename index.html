@@ -4,31 +4,59 @@ description:
 ---
 
 <div class='row'>
+    <div class='col-sm-4'>
+        <h3><i class='fa fa-fw fa-check-square-o'></i> Enroll at Brentano</h3>
+        <p>Brentano is a growing school and we welcome new students and families to our community.</p>
+        <p><a class='btn btn-primary' href='/enrollment.html'>Schedule a visit ></a></p>
+    </div>
+    <div class='col-sm-4'>
+        <h3><i class='fa fa-fw fa-graduation-cap'></i> Academics</h3>
+        <p>Brentano has classes in Pre-K thru 8th Grade. Our philosophy is to empower students as leaders in their learning.</p>
+        <p><a class='btn btn-primary' href='/academics/index.html'>Our academics ></a></p>
+    </div>
+    <div class='col-sm-4'>
+        <h3><i class='fa fa-fw fa-group'></i> Our teachers</h3>
+        <p>Brentano has an excellent and motivated teaching staff, which engages in continuous learning.</p>
+        <p><a class='btn btn-primary' href='/staff/index.html'>Meet our staff ></a></p>
+    </div>
+</div>
+<hr />
+
+<div class='row'>
     <div class='col-sm-8'>
-        <h2><i class='fa fa-fw fa-facebook-official'></i> Latest updates from Brentano</h2>
+        <h3><i class='fa fa-fw fa-facebook-official'></i> Latest updates from Brentano</h3>
         <div id="fb-feed"></div>
     </div>
     <div class='col-sm-4'>
-        <h4>Come visit!</h4>
-
-        <h4>Enroll at Brentano</h4>
+        <h3><i class='fa fa-fw fa-book'></i> Learn more</h3>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="about.html" >About Brentano</a></li>
+            <li class="list-group-item"><a href='/academics/index.html'>Academics</a></li>
+            <li class="list-group-item"><a href='/staff/index.html'>Staff</a></li>
+            <li class="list-group-item"><a href='/calendar.html'>Calendar</a></li>
+            <li class="list-group-item"><a href='/enrollment.html'>Enrollment</a></li>
+            <li class="list-group-item"><a href='/contact.html'>Contact us</a></li>
+          </ul>
     </div>
 </div>
 
 <script type="text/EJS" id="fb-feed-template">
     <% $.each(data, function(i, post){ %>
         <div class="fb-post">
-            <small>
-                <%= moment(post.created_time).format('MMM Do YYYY h:mma') %>
-            </small>
-            <p>
-                <% var post_id = post.id.split('_')[1] %>
-                <%= post.message %> <a href="https://www.facebook.com/brentanologansquare/posts/<%= post_id %>"><i class='fa fa-fw fa-facebook-official'></i></a>
-            </p>
-            <% if (typeof post.picture !== 'undefined'){ %>
-                <img style='max-height: 500px;' class='img-responsive img-thumbnail' src="https://graph.facebook.com/<%= post.object_id %>/picture?access_token=<%= access_token %>" />
-            <% } %>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <small>
+                        Posted <%= moment(post.created_time).fromNow() %> by <%= post.from.name %>
+                    </small>
+                    <p>
+                        <% var post_id = post.id.split('_')[1] %>
+                        <%= post.message %> <a href="https://www.facebook.com/brentanologansquare/posts/<%= post_id %>"><i class='fa fa-fw fa-facebook-official'></i></a>
+                    </p>
+                    <% if (typeof post.picture !== 'undefined'){ %>
+                        <a href="https://www.facebook.com/brentanologansquare/posts/<%= post_id %>"><img style='max-height: 500px;' class='img-responsive img-thumbnail' src="https://graph.facebook.com/<%= post.object_id %>/picture?access_token=<%= access_token %>" /></a>
+                    <% } %>
+                </div>
+            </div>
         </div>
-        <hr />
     <% })%>
 </script>

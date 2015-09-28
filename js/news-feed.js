@@ -18,12 +18,12 @@ function loadFeed(){
     var url = '/' + page_id + '/feed'
     var params = {
         'access_token': access_token,
-        'fields': 'message,story,created_time,picture,object_id',
+        'fields': 'message,story,created_time,picture,object_id,from',
         'limit': 5
     }
     var template_guts = $('#fb-feed-template').html()
     FB.api(url,'get', params, function(response){
-        console.log(response)
+        // console.log(response)
         var template = new EJS({'text': template_guts});
         $('#fb-feed').html(template.render(response));
     });
