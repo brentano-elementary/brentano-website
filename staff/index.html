@@ -6,30 +6,6 @@ description:
 <h1>Staff Directory</h1>
 <div class="row">
     <div class="col-sm-8">
-        <h4>Administrative Support</h4>
-        <table class="table table-condensed">
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>Staff member</th>
-                    <th>Position</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for member in site.categories['staff_admin'] %}
-                <tr>
-                    <td>
-                    {% if member.image != 'None' %}
-                        <img src="{{ member.image }}" class="img-responsive img-thumbnail" style='width: 70px;'/>
-                    {% endif %}
-                    </td>
-                    <td><a href="{{ member.url }}">{{ member.name }}</a></td>
-                    <td>{{ member.title }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-
         <h4>Kindergarten / Primary: Pre-K-2nd</h4>
         <table class="table table-condensed">
             <thead>
@@ -97,6 +73,30 @@ description:
                 <tr>
                     <td>{{ member.name }}</td>
                     <td>{{ member.room }}</td>
+                    <td>{{ member.title }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h4>Administrative Support</h4>
+        <table class="table table-condensed">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Staff member</th>
+                    <th>Position</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for member in site.categories['staff_admin'] %}
+                <tr>
+                    <td>
+                    {% if member.image != 'None' %}
+                        <img src="{{ member.image }}" class="img-responsive img-thumbnail" style='width: 70px;'/>
+                    {% endif %}
+                    </td>
+                    <td><a href="{{ member.url }}">{{ member.name }}</a></td>
                     <td>{{ member.title }}</td>
                 </tr>
                 {% endfor %}
