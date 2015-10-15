@@ -6,13 +6,16 @@ description:
 <h1>Staff Directory</h1>
 <div class="row">
     <div class="col-sm-8">
-        <h4>Pre-K through 2nd grade</h4>
-        <table class="table table-condensed">
+        <p>Brentano's strength is our teachers. They are motivated, collaborative, and always learning.</p>
+
+        <h4>Pre-K &mdash; 2nd grade</h4>
+        <table class="table table-condensed" id='staff_lower'>
             <thead>
                 <tr>
                     <th>Teacher</th>
                     <th>Room</th>
                     <th>Grade</th>
+                    <th>Email</th>
                 </tr>
             </thead>
             <tbody>
@@ -21,18 +24,20 @@ description:
                     <td>{{ member.name }}</td>
                     <td>{{ member.room }}</td>
                     <td>{{ member.title }}</td>
+                    <td><a href='mailto:{{ member.email }}'>{{ member.email }}</a></td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
 
-        <h4>3rd through 8th grade</h4>
-        <table class="table table-condensed">
+        <h4>3rd &mdash; 8th grade</h4>
+        <table class="table table-condensed" id='staff_upper'>
             <thead>
                 <tr>
                     <th>Teacher</th>
                     <th>Room</th>
                     <th>Grade</th>
+                    <th>Email</th>
                 </tr>
             </thead>
             <tbody>
@@ -41,19 +46,21 @@ description:
                     <td>{{ member.name }}</td>
                     <td>{{ member.room }}</td>
                     <td>{{ member.title }}</td>
+                    <td><a href='mailto:{{ member.email }}'>{{ member.email }}</a></td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
 
         <h4>Support</h4>
-        <table class="table table-condensed">
+        <table class="table table-condensed" id='staff_support'>
             <tbody>
                 <thead>
                     <tr>
                         <th>Staff member</th>
                         <th>Room</th>
                         <th>Title</th>
+                        <th>Email</th>
                     </tr>
                 </thead>
                 {% for member in site.categories['staff_support'] %}
@@ -61,24 +68,27 @@ description:
                     <td>{{ member.name }}</td>
                     <td>{{ member.room }}</td>
                     <td>{{ member.title }}</td>
+                    <td><a href='mailto:{{ member.email }}'>{{ member.email }}</a></td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
 
         <h4>Administrative</h4>
-        <table class="table table-condensed">
+        <table class="table table-condensed" id='staff_admin'>
             <tbody>
                 <thead>
                     <tr>
                         <th>Staff member</th>
                         <th>Title</th>
+                        <th>Email</th>
                     </tr>
                 </thead>
                 {% for member in site.categories['staff_admin'] %}
                 <tr>
                     <td>{{ member.name }}</td>
                     <td>{{ member.title }}</td>
+                    <td><a href='mailto:{{ member.email }}'>{{ member.email }}</a></td>
                 </tr>
                 {% endfor %}
             </tbody>
@@ -87,3 +97,36 @@ description:
     </div>
     <div class="col-sm-4"></div>
 </div>
+
+<script src="/js/jquery.dataTables.min.js"></script>
+<script src="/js/jquery.dataTables.sorting.js"></script>
+<script src="/js/dataTables.bootstrap.js"></script>
+<script>
+    $('#staff_lower').dataTable( {
+        "aaSorting": [ [1,'asc'],[0,'asc'] ],
+        "bInfo": false,
+        "bPaginate": false,
+        "bFilter": false
+      });
+
+    $('#staff_upper').dataTable( {
+        "aaSorting": [ [1,'asc'],[0,'asc'] ],
+        "bInfo": false,
+        "bPaginate": false,
+        "bFilter": false
+      });
+
+    $('#staff_support').dataTable( {
+        "aaSorting": [ [1,'asc'],[0,'asc'] ],
+        "bInfo": false,
+        "bPaginate": false,
+        "bFilter": false
+      });
+
+    $('#staff_admin').dataTable( {
+        "aaSorting": [ [1,'asc'],[0,'asc'] ],
+        "bInfo": false,
+        "bPaginate": false,
+        "bFilter": false
+      });
+</script>
