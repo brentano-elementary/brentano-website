@@ -12,7 +12,7 @@ description: Brentano’s Local School Council holds public meetings on the seco
 
         <h3>2014 - 2016 LSC Members</h3>
 
-        <table class='table'>
+        <table class='table' id='lsc'>
             <thead>
                 <tr>
                     <th>Title</th>
@@ -85,3 +85,15 @@ description: Brentano’s Local School Council holds public meetings on the seco
     <div class='col-sm-4'>
     </div>
 </div>
+
+<script src="/js/jquery.dataTables.min.js"></script>
+<script src="/js/jquery.dataTables.sorting.js"></script>
+<script src="/js/dataTables.bootstrap.js"></script>
+<script>
+    $('#lsc').dataTable( {
+        "aaSorting": [ [0,'asc'], [1,'asc'] ],
+        "bInfo": false,
+        "bPaginate": false,
+        "bFilter": false
+      });
+</script>
