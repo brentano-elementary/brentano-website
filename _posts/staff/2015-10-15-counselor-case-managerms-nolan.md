@@ -2,7 +2,7 @@
 layout: staff
 date: 2015-10-15
 image: 
-category: staff_support
+category: staff_admin
 name: Ms. Nolan
 room: Office
 title: Counselor / Case Manager

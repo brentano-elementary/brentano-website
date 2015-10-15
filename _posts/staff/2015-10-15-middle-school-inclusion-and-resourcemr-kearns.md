@@ -5,6 +5,6 @@ image:
 category: staff_upper
 name: Mr. Kearns
 room: 311
-title: Middle School Inclusion and Resource
+title: Middle School inclusion and resource
 email: dekearns@cps.edu
 ---
