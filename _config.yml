@@ -1,7 +1,9 @@
 port:  5000
 markdown: kramdown
 name: "Brentano Math and Science Academy"
-url: "localhost:5000"
+title: "Brentano Math and Science Academy"
+description: "An extraordinary neighborhood school in the heart of Logan Square"
+url: "http://brentanomathandscienceacademy.org"
 encoding: utf-8
 timezone: America/Chicago
 description: ""
