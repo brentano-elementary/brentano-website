@@ -54,15 +54,15 @@ description:
 
         <h4>Support</h4>
         <table class="table table-condensed" id='staff_support'>
+            <thead>
+                <tr>
+                    <th>Staff member</th>
+                    <th>Room</th>
+                    <th>Title</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
             <tbody>
-                <thead>
-                    <tr>
-                        <th>Staff member</th>
-                        <th>Room</th>
-                        <th>Title</th>
-                        <th>Email</th>
-                    </tr>
-                </thead>
                 {% for member in site.categories['staff_support'] %}
                 <tr>
                     <td>{{ member.name }}</td>
@@ -76,14 +76,14 @@ description:
 
         <h4>Administrative</h4>
         <table class="table table-condensed" id='staff_admin'>
+            <thead>
+                <tr>
+                    <th>Staff member</th>
+                    <th>Title</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
             <tbody>
-                <thead>
-                    <tr>
-                        <th>Staff member</th>
-                        <th>Title</th>
-                        <th>Email</th>
-                    </tr>
-                </thead>
                 {% for member in site.categories['staff_admin'] %}
                 <tr>
                     <td>{{ member.name }}</td>
@@ -103,28 +103,28 @@ description:
 <script src="/js/dataTables.bootstrap.js"></script>
 <script>
     $('#staff_lower').dataTable( {
-        "aaSorting": [ [1,'asc'],[0,'asc'] ],
+        "aaSorting": [ [2,'asc'] ],
         "bInfo": false,
         "bPaginate": false,
         "bFilter": false
       });
 
     $('#staff_upper').dataTable( {
-        "aaSorting": [ [1,'asc'],[0,'asc'] ],
+        "aaSorting": [ [2,'asc'] ],
         "bInfo": false,
         "bPaginate": false,
         "bFilter": false
       });
 
     $('#staff_support').dataTable( {
-        "aaSorting": [ [1,'asc'],[0,'asc'] ],
+        "aaSorting": [ [2,'asc'] ],
         "bInfo": false,
         "bPaginate": false,
         "bFilter": false
       });
 
     $('#staff_admin').dataTable( {
-        "aaSorting": [ [1,'asc'],[0,'asc'] ],
+        "aaSorting": [ [0,'asc'] ],
         "bInfo": false,
         "bPaginate": false,
         "bFilter": false
