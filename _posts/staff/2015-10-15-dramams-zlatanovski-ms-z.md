@@ -6,5 +6,5 @@ category: staff_support
 name: Ms. Zlatanovski (Ms. Z)
 room: 304
 title: Drama
-email: jmeinbinder@cps.edu
+email: mzlatanovski@cps.edu
 ---

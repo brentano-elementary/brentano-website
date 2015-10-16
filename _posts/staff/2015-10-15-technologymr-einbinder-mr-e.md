@@ -6,5 +6,5 @@ category: staff_support
 name: Mr. Einbinder (Mr. E)
 room: 115
 title: Technology
-email: mzlatanovski@cps.edu
+email: jmeinbinder@cps.edu
 ---
