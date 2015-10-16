@@ -24,7 +24,8 @@ We used the following open source tools:
 
 ## Team
 
-* Derek Eder - developer, content
+* Derek Eder - developer, design, content
+* Eric van Zanten - developer, facebook integration
 
 ## We :heart: contributions
 
