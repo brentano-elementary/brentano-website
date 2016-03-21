@@ -3,8 +3,8 @@ layout: staff
 date: 2015-10-15
 image: 
 category: staff_upper
-name: Ms. Son
+name: Mr. Lenthe
 room: 211
 title: Primary inclusion and resource
-email: myson1@cps.edu
+email: mlenthe@cps.edu
 ---
