@@ -9,90 +9,16 @@ description:
         <p>Brentano's strength is our teachers. They are motivated, collaborative, and always learning.</p>
 
         <h4>Pre-K &mdash; 2nd grade</h4>
-        <table class="table table-condensed" id='staff_lower'>
-            <thead>
-                <tr>
-                    <th>Teacher</th>
-                    <th>Room</th>
-                    <th>Grade</th>
-                    <th>Email</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for member in site.categories['staff_lower'] %}
-                <tr>
-                    <td>{{ member.name }}</td>
-                    <td>{{ member.room }}</td>
-                    <td>{{ member.title }}</td>
-                    <td><a href='mailto:{{ member.email }}'>{{ member.email }}</a></td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+        <div id='staff_lower'></div>
 
         <h4>3rd &mdash; 8th grade</h4>
-        <table class="table table-condensed" id='staff_upper'>
-            <thead>
-                <tr>
-                    <th>Teacher</th>
-                    <th>Room</th>
-                    <th>Grade</th>
-                    <th>Email</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for member in site.categories['staff_upper'] %}
-                <tr>
-                    <td>{{ member.name }}</td>
-                    <td>{{ member.room }}</td>
-                    <td>{{ member.title }}</td>
-                    <td><a href='mailto:{{ member.email }}'>{{ member.email }}</a></td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+        <div id='staff_upper'></div>
 
         <h4>Enrichment</h4>
-        <table class="table table-condensed" id='staff_support'>
-            <thead>
-                <tr>
-                    <th>Staff member</th>
-                    <th>Room</th>
-                    <th>Title</th>
-                    <th>Email</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for member in site.categories['staff_support'] %}
-                <tr>
-                    <td>{{ member.name }}</td>
-                    <td>{{ member.room }}</td>
-                    <td>{{ member.title }}</td>
-                    <td><a href='mailto:{{ member.email }}'>{{ member.email }}</a></td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+        <div id='staff_support'></div>
 
         <h4>Administrative</h4>
-        <table class="table table-condensed" id='staff_admin'>
-            <thead>
-                <tr>
-                    <th>Staff member</th>
-                    <th>Title</th>
-                    <th>Email</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for member in site.categories['staff_admin'] %}
-                <tr>
-                    <td>{{ member.name }}</td>
-                    <td>{{ member.title }}</td>
-                    <td><a href='mailto:{{ member.email }}'>{{ member.email }}</a></td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+        <div id='staff_admin'></div>
 
     </div>
     <div class="col-sm-4"></div>
@@ -101,32 +27,72 @@ description:
 <script src="/js/jquery.dataTables.min.js"></script>
 <script src="/js/jquery.dataTables.sorting.js"></script>
 <script src="/js/dataTables.bootstrap.js"></script>
+<script src="/js/jquery.csv.min.js"></script>
+<script src='/js/csv_to_html_table.js'></script>
 <script>
-    $('#staff_lower').dataTable( {
-        "aaSorting": [ [2,'asc'] ],
-        "bInfo": false,
-        "bPaginate": false,
-        "bFilter": false
-      });
 
-    $('#staff_upper').dataTable( {
-        "aaSorting": [ [2,'asc'] ],
-        "bInfo": false,
-        "bPaginate": false,
-        "bFilter": false
-      });
+    function format_email(email){
+        if (email)
+            return "<a href='mailto:" + email + "'>" + email + "</a>";
+        else
+            return "";
+    }
 
-    $('#staff_support').dataTable( {
-        "aaSorting": [ [2,'asc'] ],
-        "bInfo": false,
-        "bPaginate": false,
-        "bFilter": false
-      });
+    $(function() {
+        CsvToHtmlTable.init({
+            csv_path: '/documents/brentano-staff-lower.csv', 
+            element: 'staff_lower',
+            csv_options: {separator: ',', delimiter: '"'},
+            datatables_options: {
+                "paging": false, 
+                "aaSorting": [ [2,'asc'] ],
+                "bInfo": false,
+                "bPaginate": false,
+                "bFilter": false
+            },
+            custom_formatting: [[3, format_email]]
+        });
 
-    $('#staff_admin').dataTable( {
-        "aaSorting": [ [0,'asc'] ],
-        "bInfo": false,
-        "bPaginate": false,
-        "bFilter": false
-      });
+        CsvToHtmlTable.init({
+            csv_path: '/documents/brentano-staff-upper.csv', 
+            element: 'staff_upper',
+            csv_options: {separator: ',', delimiter: '"'},
+            datatables_options: {
+                "paging": false, 
+                "aaSorting": [ [2,'asc'] ],
+                "bInfo": false,
+                "bPaginate": false,
+                "bFilter": false
+            },
+            custom_formatting: [[3, format_email]]
+        });
+
+        CsvToHtmlTable.init({
+            csv_path: '/documents/brentano-staff-support.csv', 
+            element: 'staff_support',
+            csv_options: {separator: ',', delimiter: '"'},
+            datatables_options: {
+                "paging": false, 
+                "aaSorting": [ [2,'asc'] ],
+                "bInfo": false,
+                "bPaginate": false,
+                "bFilter": false
+            },
+            custom_formatting: [[3, format_email]]
+        });
+
+        CsvToHtmlTable.init({
+            csv_path: '/documents/brentano-staff-admin.csv', 
+            element: 'staff_admin',
+            csv_options: {separator: ',', delimiter: '"'},
+            datatables_options: {
+                "paging": false, 
+                "aaSorting": [ [0,'asc'] ],
+                "bInfo": false,
+                "bPaginate": false,
+                "bFilter": false
+            },
+            custom_formatting: [[2, format_email]]
+        });
+    });
 </script>
