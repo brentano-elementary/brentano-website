@@ -1,15 +1,18 @@
-"Teacher","Room","Grade","Email"
-"Ms. Williams",207,"3rd","bmwilliams3@cps.edu"
-"Ms. Stevens",205,"3rd","astevens12@cps.edu"
-"Ms. Yircott",206,"4th","kmyircott@cps.edu"
-"Ms. Lanctot",204,"4th","relanctot@cps.edu"
-"Ms. Kornblau (Ms. K)",213,"5th and 6th","crkornblau@cps.edu"
-"Ms. Bartlett",217,"5th and 6th","eabartlett1@cps.edu"
-"Mr. Harlan",210,"5th and 6th","mjharlan@cps.edu"
-"Ms. Thompson",302,"7th and 8th","jhthompson1@cps.edu"
-"Ms. Preston",315,"7th and 8th","ktharris9@cps.edu"
-"Mr. Bingea",306,"7th and 8th","arbingea@cps.edu"
-"Ms. Thies",311,"Middle School inclusion and resource","ethies@cps.edu"
-"Mr. Kearns",317,"Middle School inclusion and resource","dekearns@cps.edu"
-"Ms. Nguyen",317,"Middle School inclusion and resource","vnguyen5@cps.edu"
-"Mr. Lenthe",211,"Middle School inclusion and resource","mlenthe@cps.edu"
+Teacher,Room,Grade,Email
+Ms. Williams,207,3rd,bmwilliams3@cps.edu
+Ms. Stevens,205,3rd,astevens12@cps.edu
+Ms. Yircott,206,4th,kmyircott@cps.edu
+Ms. Witt,204,4th,jwitt@cps.edu
+Ms. Kornblau (Ms. K),213,5th and 6th,crkornblau@cps.edu
+Ms. Bartlett,217,5th and 6th,eabartlett1@cps.edu
+Ms. Gavin,210,5th and 6th,
+Ms. Thompson,302,7th and 8th,jhthompson1@cps.edu
+Ms. Preston,315,7th and 8th,ktharris9@cps.edu
+Mr. Bingea,306,7th and 8th,arbingea@cps.edu
+Ms. Thies,311,Inclusion and resource,ethies@cps.edu
+Mr. Kearns,317,Inclusion and resource,dekearns@cps.edu
+Ms. Nguyen,317,Inclusion and resource,vnguyen5@cps.edu
+Mr. Lenthe,211,Inclusion and resource,mlenthe@cps.edu
+Ms. Stenson,204,Inclusion and resource,lstenson@cps.edu
+Ms. Maggie Lopez,203,Inclusion and resource,mglopez8@cps.edu
+Ms. Hernandez,215,inclusion and resource,hmhernandez@cps.edu

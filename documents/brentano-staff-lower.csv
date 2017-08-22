@@ -1,14 +1,13 @@
-"Teacher","Room","Grade","Email"
-"Ms. Arce",101,"1st","snarce@cps.edu"
-"Ms. Hendler",104,"1st","mhendler@cps.edu"
-"Ms. Parkinson",117,"2nd","kpparkinson@cps.edu"
-"Ms. Cosmas",114,"2nd","crcosmas@cps.edu"
-"Ms. Hernandez",114,"2nd","hmhernandez@cps.edu"
-"Ms. Sandoval",110,"Kdg","nsandoval11@cps.edu"
-"Ms. Brodie",107,"Kdg","babrodie@cps.edu"
-"Ms. Kozisek",106,"Kdg","ahkozisek@cps.edu"
-"Ms. Sanew",105,"PreK","vsanew@cps.edu"
-"Ms. Patel",113,"PreK","jypatel@cps.edu"
-"Ms. Kellogg",113,"PreK","aekellogg@cps.edu"
-"Ms. Stenson",101,"Primary inclusion and resource","lstenson@cps.edu"
-"Ms. Lopez",203,"Primary inclusion and resource","mglopez8@cps.edu"
+Teacher,Room,Grade,Email
+Ms. Arce,101,1st,snarce@cps.edu
+Ms. Kozisek,103,1st,ahkozisek@cps.edu
+Ms. Cosmas,104,1st,crcosmas@cps.edu
+Ms. Parkinson,117,2nd,kpparkinson@cps.edu
+Ms. Daisy Lopez,114,2nd,
+Ms. Hernandez,114,Primary inclusion and resource,hmhernandez@cps.edu
+Ms. Sandoval,110,Kdg,nsandoval11@cps.edu
+Ms. Brodie,107,Kdg,babrodie@cps.edu
+Ms. Dugan,106,Kdg,kmdugan2@cps.edu
+Ms. Sanew,105,PreK,vsanew@cps.edu
+Ms. De Lira,113,PreK,namora@cps.edu
+Ms. Kellogg,113,PreK,aekellogg@cps.edu

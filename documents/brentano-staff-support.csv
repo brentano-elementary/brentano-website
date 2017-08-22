@@ -1,6 +1,6 @@
-"Staff member","Room","Title","Email"
-"Ms. Brody","Art room","Art","jsbrody@cps.edu"
-"Ms. Zlatanovski (Ms. Z)",304,"Drama","mzlatanovski@cps.edu"
-"Mr. Hess","Gym","Physical Education","arhess@cps.edu"
-"Ms. Marquez",305,"Music","krmarquez1@cps.edu"
-"Mr. Einbinder (Mr. E)",115,"Tech & PE","jmeinbinder@cps.edu"
+Teacher,Room,Grade,Email
+Ms. Brody,Art room,Art,jsbrody@cps.edu
+Ms. Zlatanovski (Ms. Z),304,Drama,mzlatanovski@cps.edu
+Mr. Harlan,Gym,Physical Education,
+Ms. Marquez,305,Music,krmarquez1@cps.edu
+Mr. Einbinder (Mr. E),115,Tech & PE,jmeinbinder@cps.edu
