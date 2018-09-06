@@ -20,6 +20,9 @@ description:
         <h4>Administrative</h4>
         <div id='staff_admin'></div>
 
+        <h4>Paraprofessional</h4>
+        <div id='staff_paraprofessional'></div>
+
     </div>
     <div class='col-sm-4'>
         <p><img class='img-responsive img-thumbnail' alt='Brentano Elementary' title='Brentano Elementary' src='/images/large/2016/12-01-15-Brentano_T6C9098.jpg' /></p>
@@ -96,6 +99,20 @@ description:
             datatables_options: {
                 "paging": false, 
                 "aaSorting": [ [0,'asc'] ],
+                "bInfo": false,
+                "bPaginate": false,
+                "bFilter": false
+            },
+            custom_formatting: [[2, format_email]]
+        });
+
+        CsvToHtmlTable.init({
+            csv_path: '/documents/brentano-staff-paraprofessionals.csv', 
+            element: 'staff_paraprofessional',
+            csv_options: {separator: ',', delimiter: '"'},
+            datatables_options: {
+                "paging": false, 
+                "aaSorting": [ [1,'asc'] ],
                 "bInfo": false,
                 "bPaginate": false,
                 "bFilter": false
