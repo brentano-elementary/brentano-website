@@ -1,7 +1,7 @@
-Teacher,Room,Grade,Email
-Ms. Brody,Art room,Art,jsbrody@cps.edu
-Ms. Zlatanovski (Ms. Z),015,Drama,mzlatanovski@cps.edu
-Ms. Marquez,011,Music,krmarquez1@cps.edu
-Ms. Ruiz,210,Digital Stortytelling,mcruizstanbary@cps.edu
-Mr. Harlan,Gym,Physical Education,mjharlan@cps.edu
-Mr. Einbinder (Mr. E),Gym,Tech & PE,jmeinbinder@cps.edu
+"Teacher","Room","Grade","Email"
+"Ms. Brody","Art room","Art","jsbrody@cps.edu"
+"Ms. Ruiz",210,"Digital Stortytelling","mcruizstanbary@cps.edu"
+"Ms. Zlatanovski (Ms. Z)",15,"Drama","mzlatanovski@cps.edu"
+"Ms. Marquez",11,"Music","krmarquez1@cps.edu"
+"Mr. Harlan","Gym","Physical Education","mjharlan@cps.edu"
+"Mr. Einbinder (Mr. E)","Gym","Tech & PE","jmeinbinder@cps.edu"
