@@ -1,20 +1,21 @@
-"Teacher","Room","Grade","Email"
-"Ms. Williams",207,"3rd","bmwilliams3@cps.edu"
-"Ms. Stevens",205,"3rd","astevens12@cps.edu"
-"Ms. Cole",201,"3rd","nrcole1@cps.edu"
-"Ms. Schuler (Yircott)",206,"4th","kmyircott@cps.edu"
-"Ms. Witt",204,"4th","jwitt@cps.edu"
-"Ms. Kornblau (K)",317,"5th and 6th","crkornblau@cps.edu"
-"Ms. Bartlett",213,"5th and 6th","eabartlett1@cps.edu"
-"Ms. Goethals",217,"5th and 6th","megoethals@cps.edu "
-"Mr. Collins",215,"5th and 6th","RCollins24@cps.edu"
-"Dr. Thompson",302,"7th and 8th","jhthompson1@cps.edu"
-"Ms. Preston (Harris)",315,"7th and 8th","ktharris9@cps.edu"
-"Mr. Bingea",306,"7th and 8th","arbingea@cps.edu"
-"Mr. Ramiro",211,"Inclusion and resource","mjramiro@cps.edu"
-"Mr. Kearns",317,"Inclusion and resource","dekearns@cps.edu"
-"Ms. Nguyen",317,"Inclusion and resource","vnguyen5@cps.edu"
-"Mr. Lenthe",211,"Inclusion and resource","mlenthe@cps.edu"
-"Ms. Maggie Lopez",203,"Inclusion and resource","mglopez8@cps.edu"
-"Ms. Hernandez",202,"inclusion and resource","hmhernandez@cps.edu"
-"Ms. Carmen Ortiz",211,"inclusion and resource","cmortiz7@cps.edu"
+Teacher,Room,Grade,Email
+Ms. Williams,207,3rd,bmwilliams3@cps.edu
+Ms. Stevens,205,3rd,astevens12@cps.edu
+Ms. Cole,201,3rd,nrcole1@cps.edu
+Ms. Bartlett,202,4th,eabartlett1@cps.edu
+Ms. Schuler (Yircott),206,4th,kmyircott@cps.edu
+Ms. Witt,204,4th,jwitt@cps.edu
+Ms. Kornblau (K),317,5th and 6th,crkornblau@cps.edu
+Mr. Dirks,213,5th and 6th,tdirks1@cps.edu
+Ms. Goethals,217,5th and 6th,megoethals@cps.edu 
+Mr. Collins,215,5th and 6th,RCollins24@cps.edu
+Dr. Thompson,302,7th and 8th,jhthompson1@cps.edu
+Ms. Preston (Harris),303,7th and 8th,ktharris9@cps.edu
+Mr. Bingea,306,7th and 8th,arbingea@cps.edu
+Mr. Ramiro,211,Inclusion and resource,mjramiro@cps.edu
+Mr. Kearns,317,Inclusion and resource,dekearns@cps.edu
+Ms. Nguyen,317,Inclusion and resource,vnguyen5@cps.edu
+Mr. Lenthe,211,Inclusion and resource,mlenthe@cps.edu
+Ms. Maggie Lopez,203,Inclusion and resource,mglopez8@cps.edu
+Ms. Hernandez,202,inclusion and resource,hmhernandez@cps.edu
+Mr. Rogers,211,inclusion and resource,vlrogers2@cps.edu
