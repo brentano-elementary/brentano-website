@@ -40,4 +40,4 @@ Code contributions are also welcome: fork the project, make your changes, & send
 
 ## Copyright
 
-Copyright (c) 2015 Friends of Brentano and DataMade. Released under the [MIT License](https://github.com/brentano-elementary/brentano-website/blob/master/LICENSE).
+Copyright (c) 2015 Friends of Brentano and DataMade. Released under the [MIT License](https://github.com/brentano-elementary/brentano-website/blob/main/LICENSE).
