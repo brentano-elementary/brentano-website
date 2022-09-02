@@ -8,23 +8,7 @@ description:
     <div class="col-sm-8">
         <p>Brentano's strength is our teachers. They are motivated, collaborative, and always learning.</p>
 
-        <h4>Pre-K &mdash; 2nd grade</h4>
-        <div id='staff_lower'></div>
-
-        <h4>3rd &mdash; 8th grade</h4>
-        <div id='staff_upper'></div>
-
-        <h4>Enrichment</h4>
-        <div id='staff_support'></div>
-
-        <h4>Administrative</h4>
-        <div id='staff_admin'></div>
-
-        <h4>Paraprofessional</h4>
-        <div id='staff_paraprofessional'></div>
-
-        <h4>Meal services</h4>
-        <div id='staff_mealservices'></div>
+        <div id='staff_all'></div>
 
     </div>
     <div class='col-sm-4'>
@@ -54,8 +38,8 @@ description:
 
     $(function() {
         CsvToHtmlTable.init({
-            csv_path: '/documents/brentano-staff-lower.csv', 
-            element: 'staff_lower',
+            csv_path: '/documents/brentano-staff-2022-23.csv', 
+            element: 'staff_all',
             csv_options: {separator: ',', delimiter: '"'},
             datatables_options: {
                 "paging": false, 
@@ -65,76 +49,6 @@ description:
                 "bFilter": false
             },
             custom_formatting: [[3, format_email]]
-        });
-
-        CsvToHtmlTable.init({
-            csv_path: '/documents/brentano-staff-upper.csv', 
-            element: 'staff_upper',
-            csv_options: {separator: ',', delimiter: '"'},
-            datatables_options: {
-                "paging": false, 
-                "aaSorting": [ [2,'asc'] ],
-                "bInfo": false,
-                "bPaginate": false,
-                "bFilter": false
-            },
-            custom_formatting: [[3, format_email]]
-        });
-
-        CsvToHtmlTable.init({
-            csv_path: '/documents/brentano-staff-support.csv', 
-            element: 'staff_support',
-            csv_options: {separator: ',', delimiter: '"'},
-            datatables_options: {
-                "paging": false, 
-                "aaSorting": [ [2,'asc'] ],
-                "bInfo": false,
-                "bPaginate": false,
-                "bFilter": false
-            },
-            custom_formatting: [[3, format_email]]
-        });
-
-        CsvToHtmlTable.init({
-            csv_path: '/documents/brentano-staff-admin.csv', 
-            element: 'staff_admin',
-            csv_options: {separator: ',', delimiter: '"'},
-            datatables_options: {
-                "paging": false, 
-                "aaSorting": [ [0,'asc'] ],
-                "bInfo": false,
-                "bPaginate": false,
-                "bFilter": false
-            },
-            custom_formatting: [[2, format_email]]
-        });
-
-        CsvToHtmlTable.init({
-            csv_path: '/documents/brentano-staff-paraprofessionals.csv', 
-            element: 'staff_paraprofessional',
-            csv_options: {separator: ',', delimiter: '"'},
-            datatables_options: {
-                "paging": false, 
-                "aaSorting": [ [1,'asc'] ],
-                "bInfo": false,
-                "bPaginate": false,
-                "bFilter": false
-            },
-            custom_formatting: [[2, format_email]]
-        });
-
-        CsvToHtmlTable.init({
-            csv_path: '/documents/brentano-staff-mealservices.csv', 
-            element: 'staff_mealservices',
-            csv_options: {separator: ',', delimiter: '"'},
-            datatables_options: {
-                "paging": false, 
-                "aaSorting": [ [1,'desc'] ],
-                "bInfo": false,
-                "bPaginate": false,
-                "bFilter": false
-            },
-            custom_formatting: [[2, format_email]]
         });
     });
 </script>
